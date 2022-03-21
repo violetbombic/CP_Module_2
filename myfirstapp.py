@@ -5,8 +5,6 @@ st.header("hello world")
 st.text("from Brixen")  
 
 
-title = st.radio('The weather in which city you want to know?', ('Stockholm', 'Brixen', 'Kosice')
-st.text('The current movie title is', title)
 
 
 genre = st.radio("What's your favorite movie genre",('Comedy', 'Drama', 'Documentary'), help = 'click on one of the options')
@@ -51,7 +49,7 @@ import json, requests
 
 # add your own APIkey
 APIkey = '3616c9537549584295b22c956c6fcf8d'
-location = st.text_input('Give me a city name')
+location = st.radio('The weather in which city you want to know?', ('Stockholm', 'Brixen', 'Kosice'))
 
 # check API documentation to see what structure of URL is needed to access the data
 # http://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
