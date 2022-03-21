@@ -71,5 +71,7 @@ weatherData = json.loads(response.text)
 # pprint(weatherData) 
 
 st.text(weatherData['main']['temp_max']) 
+
+st.metric(label="Temperature", value= location)
 # more???????????
 
