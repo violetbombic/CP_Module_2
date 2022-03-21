@@ -70,8 +70,8 @@ weatherData = json.loads(response.text)
 # from pprint import pprint 
 # pprint(weatherData) 
 
-temp = st.text(weatherData['main']['temp_max']) 
+#st.text(weatherData['main']['temp_max']) 
 
-st.metric(label="Temperature", value= temp)
+st.metric(label="Temperature", value= st.text(weatherData['main']['temp_max'])  )
 # more???????????
 
