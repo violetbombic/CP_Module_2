@@ -43,5 +43,5 @@ weatherData = json.loads(response.text)
 # from pprint import pprint 
 # pprint(weatherData) 
 
-print(weatherData['main']['temp_max']) 
+st.text(weatherData['main']['temp_max']) 
 # more???????????
