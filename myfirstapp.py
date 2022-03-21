@@ -6,7 +6,7 @@ st.text("from Brixen")
 
 
 title = st.radio('The weather in which city you want to know?', ('Stockholm', 'Brixen', 'Kosice')
-st.write('The current movie title is', title)
+st.text('The current movie title is', title)
 
 
 genre = st.radio("What's your favorite movie genre",('Comedy', 'Drama', 'Documentary'), help = 'click on one of the options')
