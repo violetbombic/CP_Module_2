@@ -14,11 +14,11 @@ st.write('You selected:', option)
                                                    
 url= 'https://api.datamuse.com/words?' + option + '=' + keyword + '&max=10'
 
-st.write(url)
+st.write("Here is the url: ", url)
 
-# response = requests.get(url)   
+response = requests.get(url)   
 
-# dataFromDatamuse = json.loads(response.text) 
+dataFromDatamuse = json.loads(response.text) 
 
-# st.write(dataFromDatamuse)
+st.write(dataFromDatamuse)
 
