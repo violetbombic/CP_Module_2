@@ -5,7 +5,7 @@ from pprint import pprint
 keyword=st.text_input('plz give me a keyword: ')
 
 option = st.selectbox(
-     'How would you like to be contacted?',
+     'Please choose an option: ',
      ('rel_syn', 'rel_ant', 'sl', 'ml', 'sd'))
 
 st.write('You selected:', option)
