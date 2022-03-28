@@ -33,7 +33,7 @@ response = requests.get(url)
 
 dataFromDatamuse = json.loads(response.text) 
 
-sr.write("You chose: ", keyword, ". And the result of", 
+sr.write("You chose: ", keyword, ". And the result of", option, "is: ")
      
 for eachentry in dataFromDatamuse:
   st.write("--",eachentry['word'])
