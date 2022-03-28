@@ -9,8 +9,6 @@ option = st.selectbox(
 st.write('You selected:', option)
 
 
-option = st.selectbox('What you want to choose?', ('rel_syn', 'rel_ant', 'sl’, 'ml'))
-st.write('You selected:', option):
                                                    
 url= 'https://api.datamuse.com/words?rel_ant=' + option + '&max=10'
 
