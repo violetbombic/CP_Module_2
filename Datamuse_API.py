@@ -1,7 +1,5 @@
 import streamlit as st 
-
-
-
+import json,requests
 
 keyword=st.text_input('plz give me a keyword: ')
 
