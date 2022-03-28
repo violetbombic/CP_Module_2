@@ -21,7 +21,7 @@ response = requests.get(url)
 dataFromDatamuse = json.loads(response.text) 
 
 for e in dataFromDatamuse:
-  print(e['word'])
+  st.write(e['word'])
 
 
 #st.write(dataFromDatamuse)
