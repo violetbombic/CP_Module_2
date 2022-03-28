@@ -20,5 +20,9 @@ response = requests.get(url)
 
 dataFromDatamuse = json.loads(response.text) 
 
-st.write(dataFromDatamuse)
+for e in dataFromDatamuse:
+  print(e['word'])
+
+
+#st.write(dataFromDatamuse)
 
