@@ -35,8 +35,8 @@ dataFromDatamuse = json.loads(response.text)
 
 sr.write("You chose: ", keyword, ". And the result of", 
      
-for e in dataFromDatamuse:
-  st.write("--",e['word'])
+for eachentry in dataFromDatamuse:
+  st.write("--",eachentry['word'])
 
 
 #st.write(dataFromDatamuse)
