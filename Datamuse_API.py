@@ -2,6 +2,8 @@ import streamlit as st
 import json,requests
 from pprint import pprint
 
+keyword=input('plz give me a keyword: ')
+
 option = st.selectbox(
      'How would you like to be contacted?',
      ('rel_syn', 'rel_ant', 'sl', 'ml', 'sd'))
@@ -10,7 +12,7 @@ st.write('You selected:', option)
 
 
                                                    
-url= 'https://api.datamuse.com/words?rel_ant=' + option + '&max=10'
+url= 'https://api.datamuse.com/words?' + option + '=' + keyword + '&max=10'
 
 st.write(url)
 
