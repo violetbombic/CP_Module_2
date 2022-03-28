@@ -2,7 +2,7 @@ import streamlit as st
 import json,requests
 from pprint import pprint
 
-keyword=input('plz give me a keyword: ')
+keyword=st.text_input('plz give me a keyword: ')
 
 option = st.selectbox(
      'How would you like to be contacted?',
