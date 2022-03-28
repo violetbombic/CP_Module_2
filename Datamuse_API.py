@@ -1,5 +1,6 @@
 import json,requests
 from pprint import pprint
+import streamlite as st 
 
 #keyword=input('plz give me a keyword: ')
 option = st.selectbox('What you want to choose?', ('rel_syn', 'rel_ant', 'sl’, 'ml'))
