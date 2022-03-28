@@ -12,9 +12,11 @@ st.write('You selected:', option)
                                                    
 url= 'https://api.datamuse.com/words?rel_ant=' + option + '&max=10'
 
-response = requests.get(url)   
+st.write(url)
 
-dataFromDatamuse = json.loads(response.text) 
+# response = requests.get(url)   
 
-st.write(dataFromDatamuse)
+# dataFromDatamuse = json.loads(response.text) 
+
+# st.write(dataFromDatamuse)
 
