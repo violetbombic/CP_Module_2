@@ -21,7 +21,7 @@ response = requests.get(url)
 dataFromDatamuse = json.loads(response.text) 
 
 for e in dataFromDatamuse:
-  st.write(e['word'])
+  st.write("You chose: ", keyword,". And the result of", option, "is",e['word'])
 
 
 #st.write(dataFromDatamuse)
