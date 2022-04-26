@@ -19,4 +19,4 @@ tts=gTTS(text= text_by_user, lang= lang_code)
 tts.save(text_by_user + '.mp3')
 
 
-st.audio(text_by_user, format="audio/wav", start_time=0)
+st.audio(data=text_by_user, format="audio/wav", start_time=0)
