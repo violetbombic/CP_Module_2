@@ -16,7 +16,7 @@ text_by_user = st.text_input("Please type in some text here: ")
 lang_code = st.text_input("Please type in 2-letter language code, for example: 'en' for english, 'de' for german...").lower()
 
 tts=gTTS(text= text_by_user, lang= lang_code)
-tts.save(text_by_user + '.mp3')
+#tts.save(text_by_user + '.mp3')
 
 
 st.audio(data=text_by_user, format="audio/wav", start_time=0)
