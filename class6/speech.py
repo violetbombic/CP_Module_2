@@ -1,6 +1,7 @@
 import streamlit as st
 from gtts import gTTS
 import IPython.display as ipd  
+from googletrans import Translator
 
 tts1=gTTS(text='hello world', lang='it')
 tts1.save('audio.mp3')
