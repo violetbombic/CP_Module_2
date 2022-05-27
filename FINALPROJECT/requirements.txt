@@ -1,1 +1,4 @@
-
+nltk
+googletrans
+re
+PyPDF2
