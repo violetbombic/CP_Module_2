@@ -1,3 +1,1 @@
-nltk
-googletrans
 PyPDF2
